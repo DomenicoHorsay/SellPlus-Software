@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.softwaredevendas.InicializarSistema_controller">
+   <!-- Fundo da Tela -->
+   <Pane style="-fx-background-color: #fcfcfc; -fx-padding: 30;">
+
+      <!-- Usando VBox para centralizar os elementos -->
+      <VBox alignment="CENTER" spacing="20" layoutX="50" layoutY="50" maxWidth="600">
+
+         <!-- Logo -->
+         <ImageView fx:id="logoImage" fitWidth="244" fitHeight="111" />
+
+
+         <!-- Barra de Progresso -->
+         <ProgressBar fx:id="progressBar" prefWidth="300" style="-fx-accent: #092357;"/>
+
+         <!-- Texto de Progresso -->
+         <Label fx:id="progressText" text="Carregando o sistema..."
+                style="-fx-font-size: 14px; -fx-text-fill: #0a0a0a;"/>
+      </VBox>
+   </Pane>
+</AnchorPane>
